@@ -1,0 +1,30 @@
+<div class="alert alert-info">This page displayed the users coming from the MongoDB instance.</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#if users}}
+        {{#each users}}
+            <tr>
+                <td>{{first_name}}</td>
+                <td>{{last_name}}</td>
+                <td>{{email}}</td>
+                <td>
+                    <a class="btn btn-default fa fa-lg fa-edit" href="/users/{{email}}"></a>
+                </td>
+            </tr>
+        {{/each}}
+    {{else}}
+        <tr>
+            <td colspan="4" class="text-center">No data to display.</td>
+        </tr>
+    {{/if}}
+    </tbody>
+</table>

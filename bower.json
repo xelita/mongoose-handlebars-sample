@@ -1,0 +1,21 @@
+{
+  "name": "mongoose-handlebars-sample",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xelita/mongoose-handlebars-sample",
+  "authors": [
+    "Xelita"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "fontawesome": "~4.0.3"
+  }
+}
